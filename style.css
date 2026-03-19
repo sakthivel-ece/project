@@ -83,7 +83,6 @@ nav a:hover{
     display: flex;
     align-items: center;
     gap: 3rem;
-    cursor: pointer;
     background: rgba(255,255,255,0.15);
     backdrop-filter: blur(10px);
     padding: 1rem;
@@ -94,7 +93,9 @@ nav a:hover{
     border-radius: 30px;
     border: 1px solid rgba(255,255,255,0.15);
     box-shadow: 0 6px 6px rgba(0,0,0,0.5);
+    z-index: 9999;
 }
+
 
 ul{
     list-style: none;
@@ -297,4 +298,82 @@ main{
       font-size: 16px;
       margin-left: 5px;
       cursor: pointer;
-    }
+    }/* Full page background */
+body {
+    background: linear-gradient(135deg, #0d1b2a, #1b263b);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;   /* CENTER horizontally */
+    align-items: center;       /* CENTER vertically */
+    height: 100vh;
+    margin: 0;
+}
+
+/* The white center box */
+.login-box {
+    background: white;
+    padding: 40px;
+    width: 400px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+/* Title */
+h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+/* Labels */
+label {
+    text-align: left;
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+/* Input fields */
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+/* Row for Remember me & Forgot password */
+.row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Login button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #2f66ff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1c4be3;
+}
+
+/* Sign up text */
+.signup-text {
+    margin-top: 15px;
+}
+
+/* Robot image */
+.robot {
+    margin-top: 20px;
+    width: 130px;
+}
